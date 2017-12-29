@@ -1024,13 +1024,11 @@ html[xmlns] .slides {display: block;}
 	float: left;
 }
 
-/* About
-=================================================================== */
-/* Reservation Page
+/* Reservation Page - start
 ====================================================================== */
 #Reservation-container{
 	width: 100%;
-	height: 500px;
+	height: 1500px;
 	background-color: red;
 }
 
@@ -1061,6 +1059,106 @@ html[xmlns] .slides {display: block;}
         height: 95%;
         margin: 10px;
 }
+
+/*  Table CSS -start
+=================================================================== */
+
+table {
+    border-collapse: collapse;
+    height: 100%;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+th, td {
+    height: 50px;
+    padding: 10px;
+}
+
+td{
+	height: 50px;
+}
+
+/*  Reservation page -end
+=================================================================== */
+
+/* /////////////// CODE PART NI IKAY /////////////// */
+#txt .res{
+	height: 90%;
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#txt .res{
+	font-family: Roboto;
+}
+
+#txt .res form{
+	margin-top: 20px;
+	text-align: center;
+}
+
+#txt .res input{
+	background: lightgray;
+	border:1px solid lightgray;
+}
+
+#txt .res select{
+	
+	background: lightgray;
+	border: 1px solid lightgray;
+}
+
+
+
+#txt .res select{
+	color:black;
+	font-family: Roboto;
+	background: lightgray;
+	border-radius: 4px;
+
+	font-size: 18px;
+}
+
+#txt .res .btn{
+	height: 40px;
+	width: 100px;
+	background: slategray;
+	border: 0px;
+
+}
+
+#txt .res .btn:hover{
+	background: white;
+	cursor: hand;
+}
+
+#txt .txtBorder{
+	height: 460px;
+	width: 620px;
+	background: #1d2f3c;
+	border-top: solid 1px rgba(255,255,255,.5);
+	border-radius: 5px;
+	box-shadow: 0px 2px 7px rgba (0,0,0,0.2);
+	overflow: hidden;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+}
+
+#txt{
+	height: 100%;
+	width: 100%;
+	background: white;
+}
+
+/*  Reservation page -end
+=================================================================== */
+
 
 
 /* Custom Buttons
@@ -1588,8 +1686,42 @@ ol li ol.childlist .comment-des {
 .form-spacer {margin-top: 20px;}
 
 
-/* Pricing Tables
+/* Contact form
 =================================================================== */
+.new-contact{
+	height: 400px;
+	width: 100%;
+	background-color: black;
+}
+.nilalaman{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 300px;
+	width: 100%;	
+	background-color: black;
+}
+
+.nilalaman>div {
+
+  background-color: #f1f1f1;
+  width: 400px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.nilalaman .contact-map{
+	height: 300px;
+}
+
+.nilalaman .contact-info{
+	background-color: red;
+	height:225px;
+}
+
 
 /* Google Map
 =================================================================== */

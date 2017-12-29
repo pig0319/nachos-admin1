@@ -171,7 +171,8 @@
 
 				<div id="page-title-inner">
 
-					<h2><span>Featured Items</span></h2>
+					<h2><span>WELCOME TO NAUGHTY NACHOS</span></h2>
+					<h2><span>BEST FOOD SUPER DUPER GOOD FOOD</span></h2>
 
 					<br>
 					<br>
@@ -318,30 +319,169 @@
 
 		<p>For bookings less than 48 hours away please call us on 0969696969</p>
 		<p>Bookings by phone only for Maginhawa area residence.</p>
+
+		<div id = "txt">
+			<div id = "txtBorder">
+				<div class = "res">
+					<table>
+
+						<form name = "reservation" method = "POST" action = "insertReservation.php" >
+
+					<tr>
+						    <th></th>
+						    <th><b>CONTACT INFORMATION<b></th> 
+						    <th></th>
+					</tr>
+
+
+		<!-- Booking information-->	
+						  <tr>  <!-- first ROW(r1) -->
+						    <td> <!-- 1st COLUMNr1-->
+						    	
+								<select name = "venue">
+									<option id = "P1"> Place 1 </option>
+									<option id = "P2"> Place 2 </option>
+									<option id = "P3"> Place 3 </option>
+								</select><br><br>
+						    </td> <!-- end of 1st COLUMNr1-->
+
+						    <td> <!-- 2nd COLUMNr1-->
+						    	
+								<select id = "month" onChange = "fDay()">
+									<option value ="Date" selected disabled> Date </option>
+									<option value = "January"> January </option>
+									<option value = "February"> February </option>
+									<option value = "March"> March </option>
+									<option value = "April"> April </option>
+									<option value = "May"> May </option>
+									<option value = "June"> June </option>
+									<option value = "July"> July </option>
+									<option value = "August"> August </option>
+									<option value = "September"> September </option>
+									<option value = "October"> October </option>
+									<option value = "November"> November </option>
+									<option value = "December"> December </option>
+								</select>
+						    </td> <!-- end of 2nd COLUMNr1-->
+
+						    <td> <!-- 3rd COLUMNr1 -->
+						    	<input type = "time" name = "time" value = "Time">
+						    </td> <!-- end of 3rd COLUMNr1 -->
+
+						  </tr> 
+
+						  <!-- #########-end of first ROW(r1) ############ -->
+
+						<!-- start of second ROW(r2) Contact info -->
+						
+						  <tr>
+						    <th><br>
+						    	 <input type = "text" name = "name" value = "Name">
+							</th>
+						    <th>
+						    	 <input type = "email" name = "email" value = "Email">
+						    </th> 
+						    <th>
+						    	<input type = "tel" name = "phone" placeholder = "9412891/09153192314" minlength = "7" maxlength = "11" value = "Phone">
+						    </th>
+						  </tr>
+
+						  <!-- ######### end of second ROW(r2) Contact info #########-->
+			
+
+						  <!-- start of third ROW(r3) Guest Num -->
+
+						  <tr> 
+						    <td>  </td>
+						    <td>
+						    	 <input type = "number" name = "guest" value = "Number of Guests" min = "1" max = "200" width>
+						    </td>
+						    <td>  </td>
+						  </tr>
+
+						  <!-- ######### end of third ROW(r3) Contact info #########-->
+
+						 <tr>
+						 	<td>  </td>
+						 	<td>
+						 	<input type = "submit" name = "submit" value = "Submit" class = "btn">
+						 	</td>
+						 	<td>  </td>
+						 </tr>
+						
+						</form>
+					</table>
 		
 	</div>
+
 	<!-- End: 6th Page - Reservation -->
+
+
+
 	<div class="menu_txt">
 
-<div class = "flex-container">
-    <div class = "flexy">
-        <figure class="snip1418"><img src="img14.jpg"/></figure>
-    </div>
-    <div class = "flexy">
-        <figure class="snip1418"><img src="img15.jpg"/></figure>
-    </div>
-    <div class = "flexy">
-        <figure class="snip1418"><img src="img16.jpg"/></figure>
-    </div>
-    <div class = "flexy">
-        <figure class="snip1418"><img src="img18.jpg"/></figure>  
-    </div>
+		<div class = "flex-container">
+		    <div class = "flexy">
+		        <figure class="snip1418"><img src="img14.jpg"/></figure>
+		    </div>
+
+		    <div class = "flexy">
+		        <figure class="snip1418"><img src="img15.jpg"/></figure>
+		    </div>
+
+		    <div class = "flexy">
+		        <figure class="snip1418"><img src="img16.jpg"/></figure>
+		    </div>
+
+		    <div class = "flexy">
+		        <figure class="snip1418"><img src="img18.jpg"/></figure>  
+		    </div>
+		</div>
 </div>
+	
+
+
+	<div class = "new-contact">
+		<h2><span>Contact</span></h2>
+		<div class ="nilalaman">
+
+					<div class = "contact-hours">
+							<h2><span>HOURS</span></h2>
+							<h4>Monday</h4>
+							<h4>Tuesday</h4>
+							<h4>Wednesday</h4>
+							<h4>Thurday</h4>
+							<h4>Friday</h4>
+							<h4>Saturday</h4>
+							<h4>Sunday</h4>
+s
+
+						</div>
+					<div class = "contact-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.1646643695194!2d121.05706081428035!3d14.646592479875872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b773776f4fa9%3A0x2e979d5efe70dae!2sNaughty+Nachos!5e0!3m2!1sen!2sph!4v1506188056700" width=100% height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+						</div>
+					<div class = "contact-info">
+							<h2><span>CONTACT</span></h2>
+							<h4> Phone </h4>
+							<h2> 09167973104 </h2>
+
+							<h4> Email </h4>
+							<h2> Phinix101@Gmail.com </h2>
+
+							
+						</div>
+		</div>
+	</div>
+
+
 
 	<!-- start: 7th Page - Contact -->
+	<!-- /////////////////////////////////////////////// -->
 	<div id="mapBg"></div>
 	<div id="contact" class="color blue transparent">
-		
+		<h2><span>Contact</span></h2>
+
 		<!--start: Container -->
 		<div class="container">
 
@@ -363,6 +503,7 @@
 			<!-- end: Page Title -->
 			
 			<!-- start: Row -->
+		
 			<div class="row-fluid">		
 				
 				<div class="span12">
@@ -421,6 +562,8 @@
 
 			
 			</div>
+			-->
+			<!-- /////////////////////////////////////////////// -->
 			<!-- end: Row -->
 
 
