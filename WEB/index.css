@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.order-details{
+  width: 30%;
+}
+
+.customer-details{
+  width: 70%;
+}
+
+
+h1 {
+  text-align: center;  
+}
+
+.tab input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+/*
+.info{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info th{
+  height: 50px;
+}
+
+.info td{
+  margin: 3%%
+}
+*/
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+.paypal{
+  margin-top: 30px;
+	text-align: left;
+	float: left;	
+}
+
+body {
+
+  background-size: cover;
+  background-color:white;
+}
+
+/* Header
+=================================================================== */
+  
+header {
+  height: 50px !important;
+  background: rgba(255,255,255,1) !important;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+     -moz-box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+          box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+}
+
+.logo  {}
+
+.nav-collapse.collapse {
+    height: auto \9 !important;
+    overflow: visible \9 !important;
+  position: relative;
+  z-index: 9999;
+}
+
+.navigation {
+  padding: 6px;
+  height: 38px !important;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.search {
+  font-size: 20px;
+  padding: 12px;
+  text-align: right;
+}
+
+.search input{
+  width: 0px;
+  border: none;
+  background: transparent url(../img/search-ico-alt.png) no-repeat 5px center;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+      border-radius: 0px;
+  padding-left: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+
+.search input.activeSearch {
+  background: transparent url(../img/ajax-loader.gif) no-repeat 5px center !important;
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+
+.search input:focus{
+  width: 200px;
+  outline: none !important;
+  border-bottom: 1px solid #646464;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none; 
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+}
+
+.navbar-fixed-top .navbar-inner {
+  background: rgba(255,255,255,.8) !important;
+}
+
+.navbar, 
+.navbar-inner, 
+.nav,
+.navbar-inverse {
+  background: transparent !important;
+  filter: none !important;
+  border: none;
+  -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar .nav > li > a {
+  color: #414141;
+  border-top: 0px solid transparent;
+  text-shadow: none;
+  font-size: 14px;
+  padding: 12px 20px;
+  padding: 12px 10px \9;
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+    background: #080808 !important;   
+    color: #fff;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:focus {
+    color: #080808 !important;  
+    text-decoration: none;
+    background-color: transparent !important; 
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+.navbar .nav > .active > a:hover {
+    background: #080808 !important;   
+    color: #fff !important;
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+.navbar .nav .active a:hover > .caret {
+    border-top-color: #fff !important;  
+    border-bottom-color: #fff !important; 
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+    color: #ffffff;
+    background: #080808 !important; 
+}
+
+.dropdown-menu .active > a {
+  color: #ffffff !important;
+    background: #080808 !important;
+}
+.dropdown-menu .active > a:hover {
+    color: #ffffff !important;
+    background: #080808 !important; 
+}
+
+.navbar .btn-navbar {
+  border: none;
+  background: #fbfbf9;
+  color: #222222 !important;
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.35), inset 0px 2px 3px #fff;
+     -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.35), inset 0px 2px 3px #fff;
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.35), inset 0px 2px 3px #fff;
+  text-shadow: none;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+  margin: 0px !important;   
+}
+
+.navbar .btn-navbar:hover {
+  background: #fbfbf9;
+  text-shadow: 0 0 1px #222222;
+  color: #222222 !important;
+  -webkit-box-shadow: 1px 0px 1px rgba(0,0,0,0.1), inset 0px 1px 1px #fff;
+     -moz-box-shadow: 1px 0px 1px rgba(0,0,0,0.1), inset 0px 1px 1px #fff;
+        box-shadow: 1px 0px 1px rgba(0,0,0,0.1), inset 0px 1px 1px #fff;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;  
+}
+
+.nav .active .dropdown-toggle .caret {
+    border-top-color: #080808 !important; 
+    border-bottom-color: #080808 !important;  
+} 

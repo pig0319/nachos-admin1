@@ -9,4 +9,11 @@ Homepage
 *Menu
 *Ordering online/adding to cart
 *Payment methods
-*Database, datasets and reports
+*Database, datasets and reports 
+
+
+
+
+# Reservation
+- Send email on approval or denial
+- 

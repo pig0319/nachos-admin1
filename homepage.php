@@ -11,7 +11,7 @@
 	<!-- end: Meta -->
 	
 	<!-- start: Mobile Specific -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=, maximum-scale=1">
 	<!-- end: Mobile Specific -->
 	
 	<!-- start: Facebook Open Graph -->
@@ -24,8 +24,8 @@
 
     <!-- start: CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/style123.css" rel="stylesheet">
 	<link href="css/slider1.css" rel="stylesheet">
 	<link href="css/slider2.css" rel="stylesheet">
 	<link href="css/slider3.css" rel="stylesheet">
@@ -33,15 +33,149 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 	<!-- end: CSS -->
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+  	
+  	<style type="text/css">
+    #parallax {
+    /* The image used */
+    background-image: url("img/place1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+	color: white;
+	text-align: center;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+	#parallax h1{
+		padding-top: 15%;
+		font-family: Hammersmith One;
+		font-size: 70px;
+	}
+
+	.fa {
+  padding: 15px;
+  font-size: 17px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 4px;
+  border-radius: 50%;
+  border: 3px solid white;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+	text-decoration: none;
+	color:#595959;
+}
+
+.fa-envelope{
+	border-radius:none;
+	border:none;
+	
+	
+}
+
+.fa-map-marker{
+  border-radius:none;
+  border:none;
+  color: red;
+  
+  
+}
+
+.fa-phone{
+  border-radius:none;
+  border:none;
+  color: white;
+
+ 
+}
+.fa-facebook {
+  background: #404040;
+  color:white;
+  border: 3px solid white;
+}
+
+.fa-twitter {
+  background: #404040;
+  color:white;
+  border: 3px solid white;
+}
+
+.fa-instagram {
+  background: #404040;
+  color:white;
+  border: 3px solid white;
+}
+
+
+
+
+    </style>
+   
+    <script>
+		function Time(){
+						
+						var choices = ["12:00 NN","12:30 PM","1:00 PM","1:30 PM","2:00 PM", "2:30 PM","3:00 PM","3:30 PM","4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM","8:00 PM", "8:30 PM", "9:00 PM","9:30 PM","10:00 PM"];
+						
+						for(var i=0;i<choices.length-2;i++){
+							var opt = document.createElement("option");
+							var sel = document.getElementById("timeIn");
+							opt.innerHTML = choices[i];
+							opt.value = i;
+							sel.appendChild(opt);
+						}
+
+
+						for(var x = 2; x<choices.length;x++){
+							var opt1 = document.createElement("option");
+							var sel1 = document.getElementById("timeOut");
+							opt1.innerHTML = choices[x];
+							opt1.value = x;
+							sel1.appendChild(opt1);
+						}
+						
+									
+					}
+				function cp(){
+			var val = document.getElementById('p').value;
+			var num = document.getElementById('n');
+
+
+
+			if(document.getElementById('p').value == '(+63)'){
+				num.placeholder = "915xxxxxxx";
+			}else{
+				num.placeholder = "941xxxx";
+			}
+
+
+		}
+
+    </script>
 
 </head>
-<body>
+<body onload = "Time()">
 	
 	<!--start: Header -->
 	<header>
@@ -55,26 +189,27 @@
 				<!--start: Navigation -->
 				<div class="navigation"> 
 				
-					<div class="navbar navbar-fixed-top">
-			    		<div class="navbar-inner">
-			          		<a class="btn btn-navbar btnOverlay" data-toggle="collapse" data-target=".nav-collapse">
-				            		menu
-			          		</a>
-			          		<div class="nav-collapse collapse">
-			            		<ul class="nav">
-									<li><a href="#" class="home">Home</a></li>
-									<li><a href="#" class="menu">Featured</a></li>
-									<li><a href="#" class="about">About</a></li>
-									<li><a href="#" class="services">Services</a></li>
-									<li><a href="#" class="contact">Contact</a></li>
-			            		</ul>
-			          		</div>
-			        	</div>
-			      	</div>
+					
+
+			      	<div class="navbar">  
+					    <div class="navbar-inner">
+					      <a class="navbar-brand" href="#">Naughty Nachos</a>
+					    </div>
+					    <ul class="nav navbar-nav">
+					      <li class="active"><a href="#">Home</a></li>
+						  <li><a href="WEB/index.php" class="menu">Menu</a></li>
+						  <li><a href="#container-aboutus" class="about">About</a></li>
+						  <li><a href="Reservation.php" class="services">Reservation</a></li>
+						  <li><a href="#contact" class="contact">Contact</a></li>
+					    </ul>
+					 
+					</div>
 				
 				
 				</div>	
 				<!--end: Navigation -->	
+
+				<
 					
 			</div>
 			<!--end: Row -->
@@ -84,6 +219,10 @@
 			
 	</header>
 	<!--end: Header-->
+
+
+
+
 	<!-- start: 1st Page - Home -->
 	<div id="home">
 
@@ -93,15 +232,16 @@
 
 				<div class="sl-slider">
 
-					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+					<div class="sl-slide bg-2" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
 							<div class="deco" data-icon="N"></div>
 							<h2>Naughty Nachos</h2>
-							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p></blockquote>
+							<blockquote>
+							<p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p></blockquote>
 						</div>
 					</div>
 
-					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					<div class="sl-slide bg-1" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
 						<div class="sl-slide-inner">
 							<div class="deco" data-icon="b"></div>
 							<h2>Best Sellers</h2>
@@ -158,7 +298,7 @@
 	
 	
 	<!-- start: 3rd Page - Pricing Tables -->
-	<div id="menu" class="color blue">
+	<div id="menu" class="color white">
 		
 		<!--start: Container -->
 		<div class="container">
@@ -172,54 +312,40 @@
 				<div id="page-title-inner">
 
 					<h2><span>WELCOME TO NAUGHTY NACHOS</span></h2>
-					<h2><span>BEST FOOD SUPER DUPER GOOD FOOD</span></h2>
-
-					<br>
-					<br>
-
-						<div class ="daily-special">
-							<div class="left-pic"><img src="file:///C:/Users/neo/Documents/Module%20Ni%20Blaise/img/Naught%20Nachos%20Images/1.jpg"></div>
-							<div class="details">  
-								<h1>Daily Specials</h1>
-								<h3>We serve a new special everyday. Check our Facebook page and see what we're having today!</h3>
-									<br>
-
-								<div class = "lower-details">
-									<p>FOLLOW US ON FACEBOOK TO SEE OUR DAILY SPECIALS IN YOUR FEED!</p>
-								</div>
-								
-							</div>
-						</div>
-
-					<br>
 
 						<div class="flex-container">
-							<div class ="box"><img src="file:///C:/Users/neo/Documents/Module%20Ni%20Blaise/img/Naught%20Nachos%20Images/sub1.jpg">
-									<h3>Something Something</h3>
+							<div class ="box">
+								<figure class="snip1273">
+								  <img src="img/b1.jpg" alt="sample72"/>
+									  <figcaption>
+									    <h1>ORDER NOW</h1>
+									    <p>I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway. </p>
+									  </figcaption>
+								  		<a href="#"></a>
+								</figure>
 							</div>
-							<div class ="box"><img src="file:///C:/Users/neo/Documents/Module%20Ni%20Blaise/img/Naught%20Nachos%20Images/sub3.jpg">
-									<h3>Something Something</h3>
+							<div class ="box">
+								<figure class="snip1273">
+								  <img src="img/sub2.jpg" alt="sample21"/>
+									  <figcaption>
+									    <h1>BOOK A TABLE</h1>
+									    <p>What's the point of wearing your favorite rocketship underpants if nobody ever asks to see 'em?</p>
+										  </figcaption>
+								  <a href="#"></a>
+								 </figure>
 							</div>
-							<div class ="box"><img src="file:///C:/Users/neo/Documents/Module%20Ni%20Blaise/img/Naught%20Nachos%20Images/sub2.jpg">
-									<h3>Something Something</h3>
+							<div class ="box">
+								<figure class="snip1273">
+								  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample72.jpg" alt="sample86"/>
+									  <figcaption>
+									    <h1>VIEW GALLERY</h1>
+									    <p>Given that sooner or later we're all just going to die, what's the point of learning about integers?</p>
+									  </figcaption>
+										  <a href="#"></a>
+								</figure>
 							</div>
 							
 						</div>
-
-					
-
-						<div class="flex-container">
-							<div class ="buybox">
-								<a href="menu.html" class="buybutton">SEE MENU</a>
-							</div>
-							<div class ="buybox">
-								<a href="menu.html" class="buybutton">SEE MENU</a>
-							</div>
-							<div class ="buybox">
-								<a href="google.com" class="buybutton">SEE MENU</a>
-							</div>
-						</div>
-							
 
 				</div>	
 
@@ -251,13 +377,67 @@
 		
 	</div>
 	<!-- end: 4th Page - Portfolio -->
-	
+
+	<div class="container-aboutus">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="containe-aboutus">
+				<div class="row">
+					 <div class="col-sm-8 truly">
+
+			    	<h1 style="font-family: roboto;"><span>ABOUT US</span></h1>
+
+			    	<h3>Welcome to Naugty Nachos, a modern restaurant with innovations on mexican cuisine</h3>
+
+
+			    	<div class="flex">
+			    		<div class="fbox">
+			    		  	<p>
+						      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempore incididunt ut labore et  dolore magna aliqua.Ut enim ad minim, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						 	</p>
+			    		</div>
+
+			    		<div class="fbox">
+			    			<p>
+			    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempore incididunt ut labore et  dolore magna aliqua.Ut enim ad minim, quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    			</p>
+			    		</div>
+			    	</div>
+			    	  
+
+				      <a href="#" class="btn btn-outlined btn-primary">FIND MORE</a>
+
+			    </div>
+
+			    	<div class="col-sm-4 pics">
+
+				    	<div class = "z">
+				    		<div class="imgPlace" style="background-image: url('img/food1.jpg');">
+				    				
+					    	</div>
+			    		</div>
+
+			 		   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+	<div id="parallax">
+		
+			<h1>COME AND GRAB A SLICE</h1>
+		
+	</div>
+
+
 	<!-- start: 5th Page - About -->
 	<div id="about" class="color white">
 		
 		<!--start: Container -->
-		<div class="container">
-
+		<div class="container talaga">
 			<!--start: Wrapper -->
 			<div class="wrapper span12">
 
@@ -265,40 +445,52 @@
 			<div id="page-title">
 
 				<div id="page-title-inner">
-
-						<h2><span>About Us</span></h2>
-
 				</div>	
 
-			</div>
-			<!-- end: Page Title -->				
-		
+			</div>	
 			<!--start: Row -->
 	    	<div class="row-fluid">
 		
-				<div class="span12">
+				<div class="span6"> <!--start: span6 -->
 					
 					<!-- start: About Us -->
-					<div id="story">
-						<h3>Our Story</h3>
-						<p>
-							Naughty Nachos is located in Magiting st. corner Maginhawa Quezon City. You can easily spot us, just right next to ministop. See you here!
-						</p>
-						
-					</div>	
-					<!-- end: About Us -->
+			<div class="container"> <!--Start: Container -->
+			  <div class="row"> <!--Start: Row -->
+			    <div class="col-sm-6 omg" style="text-align:center;">
 
-					
+			    	<h1><span>OUR MENU</span></h1>
 
-				</div>
-				
-			</div>
-			<!--end: Row -->
-			
-			<!-- start: Row -->
-			<div class="row-fluid">		
-				
-				
+			    	  <br><p>
+				      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempore </p> <p> incididunt ut labore et  dolore magna aliqua.Ut enim ad minim, quis nostrud </p> <p>exercitation ullamco laboris nisi aliquip ex ea commodo consequat.
+				  	  </p>
+				      <br>
+
+				      <a href="WEB/index.php" class="btn btn-outlined btn-primary">VIEW MENU</a>
+
+			    </div>
+
+			    <div class="col-sm-6 pics">
+
+				    	<div class = "f">
+				    		<div class="imgPlace" style="background-image: url('img/L1.jpg');">
+				    				
+					    	</div>
+
+					    	<div class="imgPlace" style="background-image: url('img/L2.jpg');">
+					    	
+					    	</div> 
+			    		</div>
+
+			 		   </div>
+
+				  </div> <!--end: Row -->
+				</div> <!--end: Container -->
+	
+					<!-- 
+					Naughty Nachos is located at Magiting st. corner Maginhawa Quezon City. You can easily spot us, just right next to ministop. See you here!
+					-->
+
+				</div> <!--end: Span 6 -->
 				
 			</div>
 			<!--end: Row -->
@@ -307,285 +499,197 @@
 		
 		</div>
 		<!--end: Container -->
-		
+		<!-- end: Page Title -->	
 	</div>
+
+	<div id="parallax2" style="background-image: url('img/place5.jpg');">
+		<h2><span>RESERVE A TABLE</span></h2>
+		<h1>OPEN HOURS</h1>
+
+		<h3>Monday - Friday: 11:30 AM - 11:00 PM</h3>
+		<h3>Saturday - Sunday 11:30 AM - 11:00 PM</h3>
+
+		 <a href="Reservation.php" name = "book" class="btn btn-outlined btn-primary1">BOOK NOW</a>
+	
+	</div>
+		
+	
 	<!-- end: 5th Page - About -->
+
+	
 	
 	<!-- start: 6th Page - Reservation -->
-	<div id="Reservation-container">
-		<h1>BOOK A TABLE</h1>
-		<p>If you would like to book at table at Naughty Nachos, please use our booking form below.</p>
-		<p>We will send you comfirmation as soon as we can.</p>
-
-		<p>For bookings less than 48 hours away please call us on 0969696969</p>
-		<p>Bookings by phone only for Maginhawa area residence.</p>
-
-		<div id = "txt">
-			<div id = "txtBorder">
-				<div class = "res">
-					<table>
-
-						<form name = "reservation" method = "POST" action = "insertReservation.php" >
-
-					<tr>
-						    <th></th>
-						    <th><b>CONTACT INFORMATION<b></th> 
-						    <th></th>
-					</tr>
-
-
-		<!-- Booking information-->	
-						  <tr>  <!-- first ROW(r1) -->
-						    <td> <!-- 1st COLUMNr1-->
-						    	
-								<select name = "venue">
-									<option id = "P1"> Place 1 </option>
-									<option id = "P2"> Place 2 </option>
-									<option id = "P3"> Place 3 </option>
-								</select><br><br>
-						    </td> <!-- end of 1st COLUMNr1-->
-
-						    <td> <!-- 2nd COLUMNr1-->
-						    	
-								<select id = "month" onChange = "fDay()">
-									<option value ="Date" selected disabled> Date </option>
-									<option value = "January"> January </option>
-									<option value = "February"> February </option>
-									<option value = "March"> March </option>
-									<option value = "April"> April </option>
-									<option value = "May"> May </option>
-									<option value = "June"> June </option>
-									<option value = "July"> July </option>
-									<option value = "August"> August </option>
-									<option value = "September"> September </option>
-									<option value = "October"> October </option>
-									<option value = "November"> November </option>
-									<option value = "December"> December </option>
-								</select>
-						    </td> <!-- end of 2nd COLUMNr1-->
-
-						    <td> <!-- 3rd COLUMNr1 -->
-						    	<input type = "time" name = "time" value = "Time">
-						    </td> <!-- end of 3rd COLUMNr1 -->
-
-						  </tr> 
-
-						  <!-- #########-end of first ROW(r1) ############ -->
-
-						<!-- start of second ROW(r2) Contact info -->
-						
-						  <tr>
-						    <th><br>
-						    	 <input type = "text" name = "name" value = "Name">
-							</th>
-						    <th>
-						    	 <input type = "email" name = "email" value = "Email">
-						    </th> 
-						    <th>
-						    	<input type = "tel" name = "phone" placeholder = "9412891/09153192314" minlength = "7" maxlength = "11" value = "Phone">
-						    </th>
-						  </tr>
-
-						  <!-- ######### end of second ROW(r2) Contact info #########-->
-			
-
-						  <!-- start of third ROW(r3) Guest Num -->
-
-						  <tr> 
-						    <td>  </td>
-						    <td>
-						    	 <input type = "number" name = "guest" value = "Number of Guests" min = "1" max = "200" width>
-						    </td>
-						    <td>  </td>
-						  </tr>
-
-						  <!-- ######### end of third ROW(r3) Contact info #########-->
-
-						 <tr>
-						 	<td>  </td>
-						 	<td>
-						 	<input type = "submit" name = "submit" value = "Submit" class = "btn">
-						 	</td>
-						 	<td>  </td>
-						 </tr>
-						
-						</form>
-					</table>
+<div id="about" class="color white">
 		
-	</div>
+		<!--start: Container -->
+		<div class="container talaga">
+			<!--start: Wrapper -->
+			<div class="wrapper span12">
+
+							<!-- start: Page Title -->
+			<div id="page-title">
+
+				<div id="page-title-inner">
+				</div>	
+
+			</div>	
+			<!--start: Row -->
+	    	<div class="row-fluid">
+		
+				<div class="span6"> <!--start: span6 -->
+					
+					<!-- start: About Us -->
+			<div class="container"> <!--Start: Container -->
+			  <div class="row"> <!--Start: Row -->
+
+			  	  <div class="col-sm-6 pics">
+
+				    	<div class = "f">
+				    		<div class="imgPlace" style="background-image: url('img/L1.jpg');">		
+					    		</div>
+
+					    	<div class="imgPlace" style="background-image: url('img/L2.jpg');">
+					    		</div> 
+			    		</div>
+			 	</div>
+
+			    <div class="col-sm-6 omg" style="text-align:center;">
+
+			    	<h1><span>MORE STUFF</span></h1>
+
+			    	  <br><p>
+				      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempore </p> <p> incididunt ut labore et  dolore magna aliqua.Ut enim ad minim, quis nostrud </p> <p>exercitation ullamco laboris nisi aliquip ex ea commodo consequat.
+				  	  </p>
+				      <br>
+
+				    
+
+			    </div>
+
+			  
+
+				  </div> <!--end: Row -->
+				</div> <!--end: Container -->
+	
+					<!-- 
+					Naughty Nachos is located at Magiting st. corner Maginhawa Quezon City. You can easily spot us, just right next to ministop. See you here!
+					-->
+
+				</div> <!--end: Span 6 -->
+				
+			</div>
+			<!--end: Row -->
+			</div>
+			<!-- end: Wrapper -->
+		
+		</div>
+		<!--end: Container -->
+		<!-- end: Page Title -->	
 
 	<!-- End: 6th Page - Reservation -->
 
 
-
-	<div class="menu_txt">
-
-		<div class = "flex-container">
-		    <div class = "flexy">
-		        <figure class="snip1418"><img src="img14.jpg"/></figure>
-		    </div>
-
-		    <div class = "flexy">
-		        <figure class="snip1418"><img src="img15.jpg"/></figure>
-		    </div>
-
-		    <div class = "flexy">
-		        <figure class="snip1418"><img src="img16.jpg"/></figure>
-		    </div>
-
-		    <div class = "flexy">
-		        <figure class="snip1418"><img src="img18.jpg"/></figure>  
-		    </div>
-		</div>
-</div>
 	
-
-
-	<div class = "new-contact">
-		<h2><span>Contact</span></h2>
-		<div class ="nilalaman">
-
-					<div class = "contact-hours">
-							<h2><span>HOURS</span></h2>
-							<h4>Monday</h4>
-							<h4>Tuesday</h4>
-							<h4>Wednesday</h4>
-							<h4>Thurday</h4>
-							<h4>Friday</h4>
-							<h4>Saturday</h4>
-							<h4>Sunday</h4>
-s
-
-						</div>
-					<div class = "contact-map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.1646643695194!2d121.05706081428035!3d14.646592479875872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b773776f4fa9%3A0x2e979d5efe70dae!2sNaughty+Nachos!5e0!3m2!1sen!2sph!4v1506188056700" width=100% height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-						</div>
-					<div class = "contact-info">
-							<h2><span>CONTACT</span></h2>
-							<h4> Phone </h4>
-							<h2> 09167973104 </h2>
-
-							<h4> Email </h4>
-							<h2> Phinix101@Gmail.com </h2>
-
-							
-						</div>
-		</div>
-	</div>
-
-
+	<div id="parallax" style="background-image: url(img/place3.jpg);"></div>
 
 	<!-- start: 7th Page - Contact -->
 	<!-- /////////////////////////////////////////////// -->
-	<div id="mapBg"></div>
-	<div id="contact" class="color blue transparent">
-		<h2><span>Contact</span></h2>
+	<div id="contact" class="color black" style = "padding-bottom: 40px;">
 
 		<!--start: Container -->
 		<div class="container">
 
-			<!--start: Wrapper -->
-			<div class="wrapper span12">
-
-				
-	
-			<!-- start: Page Title -->
-			<div id="page-title">
-
-				<div id="page-title-inner">
-
-						<h2><span>Contact</span></h2>
-
-				</div>	
-
-			</div>
-			<!-- end: Page Title -->
-			
-			<!-- start: Row -->
-		
-			<div class="row-fluid">		
-				
-				<div class="span12">
+			<div class ="row">
+				 <div class="col-sm-6" style="background-color: #404040;">
+				 <br>
+				 <br>
+				 	<h1 align= "center" color="yellow" >GET IN TOUCH</h1>
+					<center>
+				 	<ul>
+						<li></br></li>
 					
-					<!-- start: Contact Info -->
-					<b>Naughty Nachos</b> •
-					95 Magiting Cor. Maginhawa •
-					Quezon City, MNL, PH •
-					facebook: facebook.com/naughtnachos	
-					<!-- end: Contact Info -->
-				
-				</div>	
-			
-			</div>
-			<!-- end: Row -->
-			
-			<hr class="clean">
-			
-			<!-- start: Row -->
-			<div class="row-fluid">		
-			
-				<!-- start: Map -->
-				<div class="span6">
-					
-					<!-- start: Contact Form -->
-					<div id="contact-form">
-
-						<form method="post" action="">
+				 		<li><i class="fa fa-envelope" style="font-size:24px; color:white; align:right" ></i>• 95 Magiting Cor. Maginhawa •</br>
+						</li>
 							
-							<fieldset>
-								
-								<input tabindex="4" id="name" name="name" type="text" value="" class="span12" placeholder="Name: Your Name Here" >
-								<input tabindex="2" id="email" name="email" type="text" value="" class="span12" placeholder="Email: email@gmail.com">
-								<textarea tabindex="3" class="input-xlarge span12" id="message" name="body" rows="7" placeholder="Message: Your message here"></textarea>
-
-								<div class="actions">
-									<button tabindex="2" type="submit" class="btn btn-succes btn-large">Send message</button>
-								</div>
-								
-							</fieldset>
-
-						</form>
-
-					</div>
-					<!-- end: Contact Form -->
+						<li><i class="fa fa-map-marker" style="font-size:24px ; color:white; align:left"></i> • NaughtyNachos@gmail.com •</li>
+						
+						<li font size="20px"><i class="fa fa-phone" style="font-size:24px; color:white; align:right"></i> • 09167973104 • </li>
+						
+						<li></br></li>
+						
+				 	</ul>
+					</center>
 					
+					
+					<center>
+					<a href="#" class="fa fa-facebook" color="white"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					</center>
 
-				</div>
-				<!-- end: Map -->
-				
-				<div class="span6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.1646643695194!2d121.05706081428035!3d14.646592479875872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b773776f4fa9%3A0x2e979d5efe70dae!2sNaughty+Nachos!5e0!3m2!1sen!2sph!4v1506188056700" width=100% height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<br><br>
 
-				
-				</div>	
+				 </div> <!--end of col-sm-6-->
 
-			
-			</div>
-			-->
-			<!-- /////////////////////////////////////////////// -->
-			<!-- end: Row -->
+ 					<div class="col-sm-6">
+					<form name = "contact" action = "sendmessage.php" method = "POST">
+						<br>
+						<br>
+						<br>
+					 	<input id="name" name="name" type="text" placeholder="NAME" class="form-control">
+						<br>
+					 	<input id="email" name="email" type="text" placeholder="EMAIL" class="form-control">
+					 	<br>
+						<textarea class="form-control" id="message" name="message" placeholder="MESSAGE" style="height:200px;" ></textarea>
+						<br>
+						<input type = "submit" name = "submit" value = "Send Message">
+					</form>
+				</div> <!--end of col-sm-6 v2-->
 
-
-			</div>
-			<!-- end: Wrapper -->
+			</div> <!-- end of row -->
+		</div> <!--end: Container -->
 		
-		</div>
-		<!--end: Container -->
 		
 	</div>
 	<!-- end: 7th Page - Contact -->
 
 	
 	<footer>
-		
+		<div class ="row">
+			<div class="col-sm-4">
+				<h2>ADDRESS:</h2>
+				Magiting st. corner Maginhawa Quezon City
+
+			</div>
+
+			<div class="col-sm-4">
+				<h2>RESERVATION:</h2>
+				contact@nachos.com
+
+			</div>
+
+			<div class="col-sm-4">
+				<h2>OPEN HOURS</h2>
+				<p>Monday-Friday: 10 AM - 11 PM</p>
+				Saturday - Sunday: 10 AM - 11 PM
+			</div>
+
+		</div>
+
 		<div id="copyright">
+			<br>
 			Naughty Nachos Est. 2014 &copy 
+			<br>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-instagram"></a>
+
 		</div>
 		<div id="social">
 			<a href="http://facebook.com/naughtnachos" rel="tooltip" title="Facebook" class="facebook">Facebook</a>
 			
-		</div>	
+		</div>
+
 		
 	</footer>	
 
@@ -608,6 +712,9 @@ s
 <script type="text/javascript" src="js/jquery.flot.pie.min.js"></script>
 <script type="text/javascript" src="js/jquery.flot.stack.js"></script>
 <script type="text/javascript" src="js/jquery.flot.resize.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script defer="defer" src="js/custom.js"></script>
 <script type="text/javascript">	

@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PayMaya.JS Example</title>
+  <link rel="stylesheet" href="milligram.min.css" />
+  <link rel="stylesheet" href="paymaya.css" />
+  <script src="paymaya.min.js" type="text/javascript"></script>
+</head>
+<body>
+<script language="JavaScript">
+  PayMaya.createForm('pk-sHQWci2P410ppwFQvsi7IQCpHsIjafy74jrhYb8qfxu', 'container', function tokenHandler(error, token) {
+    if(error) {
+      var errorMessage = 'Tokenization error: Code '
+        + error.parameters[0].code + ' / '
+        + error.parameters[0].message;
+      $('#results').html(errorMessage);
+
+    }
+    else {
+      console.log('Got a token');
+      console.log(token);
+      $('#results').html('Got a token: ' + token);
+    }
+
+    $('#pay').html('Pay');
+  });
+</script>
+
+<div id="container">
+</div>
+</body>
+</html>
